@@ -83,7 +83,7 @@ nav ul li a:hover {
 .line{
     color: #F5003A;
     font-size: 50px;
-    transition: 0.4s;
+    transition: 0.1s;
     transform: translateY(20px); /* Initial position: shifted down 20px */
   opacity: 0;
 }
@@ -95,8 +95,8 @@ nav ul li a:hover {
     font-size: 60px;
     color:#fff;
     font-weight: bolder;
-    transition: 0.4s;
-    transition: 0.4s;
+    transition: 0.3s;
+    transition: 0.3s;
     transform: translateX(-40px); /* Initial position: shifted down 20px */
   opacity: 0;
 }
@@ -170,8 +170,7 @@ nav ul li a:hover {
 }
 @media(max-aspect-ratio:16/9){
 .back-video{
-    width: auto;
-    height: 100%;
+    display: none;
 }
 }
 .directors{
