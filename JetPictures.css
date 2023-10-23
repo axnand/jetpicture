@@ -242,6 +242,7 @@ font-family: 'Rubik', sans-serif;
     width: 200px;
     margin-bottom: 20px;
     color: rgb(17, 17, 110);
+    text-align: center;
 }
 
 .video {
