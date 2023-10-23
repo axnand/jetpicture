@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500&family=Roboto:wght@100&family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500&family=Kanit:wght@600&family=Martel+Sans:wght@600&family=Roboto:wght@100&family=Rubik:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500&family=Martel+Sans:wght@600&family=Roboto:wght@100&family=Rubik:wght@600&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+<link rel="stylesheet" href="JetPictures.css">
+<link rel="stylesheet" href="form.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav id="Navbar">
+      <img src="pictures/jetlogo.png" class="logo" alt="logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+
+      </ul>
+    </nav>
+    <div id="flotingQuery" style="margin-right: -331px;">
+      <div class="flotingQuery-btn"><img src="https://www.thevisualhouse.in/images/query-close.png" alt="Close"></div>
+      <form action="https://www.thevisualhouse.in/sendmail.php" method="post" id="contactform" name="contactform">
+        <div class="centered" style="display: none;">
+            <p id="error_text"></p>
+        </div>
+        <div data-wow-delay=".6s" data-wow-duration="500ms" class="form-group wow fadeInDown">
+          <input type="text" id="name" name="name" class="form-control" placeholder="Your Name">
+        </div>
+        <div data-wow-delay=".8s" data-wow-duration="500ms" class="form-group wow fadeInDown">
+          <input type="email" id="email" name="email" class="form-control" placeholder="Your Email">
+        </div>
+        <div data-wow-delay="1s" data-wow-duration="500ms" class="form-group wow fadeInDown">
+          <input type="text" id="contact" name="contact" class="form-control" placeholder="Contact">
+        </div>
+        <div data-wow-delay="1.2s" data-wow-duration="500ms" class="form-group wow fadeInDown">
+          <textarea id="message2" name="message2" class="form-control" placeholder="Message" rows="6"></textarea>
+        </div>
+        <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                </div>
+        
+        <div data-wow-delay="1.4s" data-wow-duration="500ms" class="wow fadeInDown" id="submit">
+          <input type="submit" value="Send Message" class="btn btn-default btn-send" id="right_side_float_form_button" name="button">
+          <input type="hidden" value="Home" name="page">
+        </div>
+      </form>
+    </div>
+   <div>
+   <div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="videos/ADDD.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <p class="main">Welcome to  <span class="line">Jet</span>Pictures</p>
+      <p class="sub">TVC <span class="line">|</span> DIGITAL <span class="line">|</span> CONTENT</p>
+      <a href="https://vimeo.com/showcase/8841811">Explore Our Projects</a>
+
+    </div>
+   </div>
+   </div>
+   <div class="directors">
+    <div class="blank"></div>
+    <div class="team">
+        <h4>Our Team</h4>
+    </div>
+    <div class="arun">
+        
+    <div class="col-md-6 arun2">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Director</strong>
+            <h3 class="mb-0">Arun Jananthana</h3>
+            <div class="mb-1 text-body-secondary">Ph : 9884588011</div>
+            <div class="mb-1 text-body-secondary">Email : advertising@jetpictures.in</div>
+            <a href="https://vimeo.com/showcase/8841811" class="icon-link gap-1 icon-link-hover stretched-link">
+              Previous Projects
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="pictures/arun.png" height="200px" width="200px">
+          </div>
+        </div>
+    </div>
+    </div>
+
+    
+      </div>
+      <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- ... (your existing code) ... -->
+
+<div class="col">
+    <div class="card shadow-sm">
+      
+        <video muted plays-inline class="video">
+          <source src="videos/payment.mp4" type="video/mp4">
+        </video>
+        <img src="pictures/karur.png" class="thumbnail" alt="Video Thumbnail">
+      
+      <div class="card-body">
+        <p class="card-text"><b class="heading">Karur Vysya Bank</b></p>
+        <p class="card-text">Karur Vysya Bank is one of the leading commercial banks in India. KVB offers a wide range of services from loans, accounts & deposits etc.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ... (repeat for other video elements) ... -->
+  
+  <!-- JavaScript to control video playback on hover -->
+ 
+  
+        <div class="col">
+          <div class="card shadow-sm">
+ <video  muted plays-inline class="video">
+      <source src="videos/VLCC.mp4" type="video/mp4">
+    </video>
+    <img src="pictures/vlcc_skin.png" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+              <p class="card-text"><b class="heading">VLCC</b></p>
+              <p class="card-text">VLCC says their waxes are aromatic and can be chosen based on skin type. They claim that their waxing sessions gently pamper the skin, leaving it smooth. 
+</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+ -->                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <video muted plays-inline class="video">
+      <source src="videos/VLCCweightLoss.mp4" type="video/mp4" class="">
+    </video>
+    <img src="pictures/vlcc_fat.png" class="thumbnail" alt="Video Thumbnail">  
+            <div class="card-body">
+              <p class="card-text"><b class="heading">VLCC</b></p>
+              <p class="card-text">VLCC Wellness offers a weight loss program, providing tips for lifestyle management, exercise, and slimming programs to lose your weight.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+ -->                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video  muted plays-inline class="video">
+      <source src="videos/Domex.mp4" type="video/mp4">
+    </video>  
+    <img src="pictures/domex.png" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+              <p class="card-text"><b class="heading">Domex</b></p>
+              <p class="card-text">The Domex Fresh Guard Toilet Cleaner liquid destroys all disease-causing germs such as bacteria, viruses, and fungi, leaving your toilet fresh, sanitised and Provides Lime Freshness.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+ -->                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <video muted plays-inline class="video">
+      <source src="videos/Godrej.mp4" type="video/mp4">
+    </video>  
+    <img src="pictures/godrej.png" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+              <p class="card-text"><b class="heading">Godrej</b></p>
+              <p class="card-text">Established in 1897, the Godrej Group has its roots in India's Independence and Swadeshi movement. Our founder, Ardeshir Godrej, lawyer-turned-serial entrepreneur failed with a few ventures, before he struck gold with a locks business.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+ -->                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+
+          <div class="card shadow-sm">
+            <video muted plays-inline class="video" >
+      <source src="videos/FairEver.mp4" type="video/mp4">
+    </video>  
+    <img src="pictures/fair.png" class="thumbnail" alt="Video Thumbnail">
+            <div class="card-body">
+              <p class="card-text"><b class="heading">FairEver</b></p>
+             <p class="card-text">Fairever is a fairness cream that contains saffron and milk. It's designed to enhance skin complexion and quality, and make skin softer and smoother. 
+</p>
+              <div class="d-flex justify-content-between align-items-center">
+                
+                <div class="btn-group">
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+ -->                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="vimeo">
+    <p class="text-center">Explore more on Vimeo<div class="vimeo-image" alt="Vimeo"></div></p>
+
+  
+    </div>
+   </div>
+   <div class="container">
+   <div class="row mb-2">
+    <div class="col-md-6" id="dir2">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative arun2">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">Director</strong>
+          <h3 class="mb-0">Sunil Cherian</h3>
+          <div class="mb-1 text-body-secondary">Ph : 9884588011</div>
+          <div class="mb-1 text-body-secondary">Email : advertising@jetpictures.in</div>
+
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <img src="pictures/sunil.png" height="200px" width="200px">        </div>
+      </div>
+    </div>
+    <div class="col-md-6" id="dir2">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative arun2">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">Director</strong>
+          <h3 class="mb-0">Ram</h3>
+          <div class="mb-1 text-body-secondary">Ph : 044 450766289</div>
+          <div class="mb-1 text-body-secondary">Email : advertising@jetpictures.in</div>
+
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <img src="pictures/ram.png" height="200px" width="200px">        </div>
+      </div>
+    </div>
+    <div class="col-md-6" id="dir2">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative arun2">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Producer</strong>
+            <h3 class="mb-0">Krithiga</h3>
+            <div class="mb-1 text-body-secondary">Ph : +91 9025953655</div>
+            <div class="mb-1 text-body-secondary">Email : Producer@jetpictures.in</div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+              <img src="pictures/krithiga.png" height="200px" width="200px">        </div>
+        </div>
+      </div>
+  </div>
+   </div>
+   <div class="vimeo">
+    <p class="text-center">Our Offices</p>
+    </div>
+    <div class="map">
+         <div class="map1">
+            <p>Chennai Office</p>
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Jet%20Pictures%2C%20Renga%20Manor%2C%207th%20Cross%20Street%20%20Shastri%20Nagar%2C%20Adyar%2C%20Chennai%20600020&amp;t=m&amp;z=18&amp;output=embed&amp;iwloc=near" title="Jet Pictures, Renga Manor, 7th Cross Street  Shastri Nagar, Adyar, Chennai 600020" aria-label="Jet Pictures, Renga Manor, 7th Cross Street  Shastri Nagar, Adyar, Chennai 600020"></iframe>
+         </div>
+         <div class="map2">
+            <p>Mumbai Office</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.251355187519!2d72.8218987739901!3d19.140471649947784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b616fee7f69b%3A0xe6f64951bf42266e!2sGirnar%20CHS!5e0!3m2!1sen!2sin!4v1698014914727!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>         </div>
+    </div>
+  
+
+  </div>
+  </div>
+  
+        </div>
+        </div>
+
+                </div>
+            </div>
+</div>
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <img src="pictures/jetlogo3.jpg" width="200px">
+
+        <p class="footer-links">
+            <a href="#" class="link-1">Home </a>
+            <a href="#"> About Us </a>          
+            <a href="#"> Contact Us</a>
+            <a href="#"> Gallery</a>
+        </p>
+
+        <p class="footer-company-name">Jet Pictures © 2023</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>402 Girnar CHS </span> Lokandwala, Andheri West</p>
+            <br><br>
+            <p><span>Renga Manor, 7th Cross St</span> Shastri Nagar, Adyar, Chennai, Tamil Nadu</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 884588011</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">support@jetpictures.com</a></p>
+        </div>
+        <div class="footer-icons">
+
+            <div class="vimeo-image" alt="Vimeo"></div>
+
+
+        </div>
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Time and again we have realised that nothing succeeds like a good content and how it is executed.Like a creative director who believes in his/her script, we passionate film makers and producers strongly believe in our execution. We Jet Pictures execute the script to the maximum production and emotional value in our production.
+        </p>
+
+    </div>
+
+</footer>
+
+  <script src="js/script.js">
+
+    
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
