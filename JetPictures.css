@@ -19,8 +19,22 @@
 .logo{
    width: 160px;
    height: 100px;
-
 }
+       /* Media Query for Mobile Devices */ 
+       @media (max-width: 480px) { 
+        .logo { 
+          width: 130px;
+          height: 80px;
+        } 
+    } 
+      
+    /* Media Query for low resolution  Tablets, Ipads */ 
+    @media (min-width: 481px) and (max-width: 767px) { 
+        .logo { 
+          width: 150px;
+          height: 100px;
+        } 
+    } 
 #Navbar{
     
 
