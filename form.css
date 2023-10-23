@@ -5,7 +5,7 @@ div#flotingQuery {
     right: 0;
     margin: 0;
     padding: 20px 0 0;
-    background: #fdc00e;
+    background: #BB2525;
     list-style: none;
     z-index: 99999;
     width: 331px;
@@ -14,7 +14,7 @@ div#flotingQuery {
 }
 
 div#flotingQuery .flotingQuery-btn {
-    background: #fdc00e;
+    background: #BB2525;
     border-radius: 10px 0 0 10px;
     position: absolute;
     top: 40px;
@@ -37,9 +37,9 @@ div#flotingQuery form {
 
 div#flotingQuery form .form-control {
     background: 0;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     border-radius: 0;
-    color: #FFF;
+    color: #fff;
     margin: 10px;
 }
 
@@ -53,24 +53,24 @@ div#flotingQuery form select {
 }
 
 div#flotingQuery form .form-control::-moz-placeholder {
-    color: #FFF;
+    color: #fff;
     opacity: .7
 }
 
 div#flotingQuery form .form-control::-webkit-input-placeholder {
-    color: #FFF;
+    color: #fff;
 }
 
 div#flotingQuery form .form-control:-ms-input-placeholder {
-    color: #FFF;
+    color: #fff;
 }
 
 div#flotingQuery form .form-control::-moz-placeholder {
-    color: #FFF opacity: 1;
+    color: #fff opacity: 1;
 }
 
 div#flotingQuery form .form-control:-moz-placeholder {
-    color: #FFF opacity:1;
+    color: #fff opacity:1;
 }
 
 div#flotingQuery2 {
@@ -110,30 +110,30 @@ div#flotingQuery2 form {
 
 div#flotingQuery2 form .form-control {
     background: 0;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     border-radius: 0;
-    color: #FFF
+    color: #fff
 }
 
 div#flotingQuery2 form .form-control::-moz-placeholder {
-    color: #FFF;
+    color: #fff;
     opacity: .7
 }
 
 div#flotingQuery2 form .form-control::-webkit-input-placeholder {
-    color: #FFF
+    color: #fff
 }
 
 div#flotingQuery2 form .form-control:-ms-input-placeholder {
-    color: #FFF
+    color: #fff
 }
 
 div#flotingQuery2 form .form-control::-moz-placeholder {
-    color: #FFF opacity:1
+    color: #fff opacity:1
 }
 
 div#flotingQuery2 form .form-control:-moz-placeholder {
-    color: #FFF opacity:1
+    color: #fff opacity:1
 }
 
 #resumeupload {
