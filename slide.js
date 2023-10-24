@@ -43,3 +43,16 @@ const intervalId = setInterval(autoChangeImage, 5000);
 
 // Show the first image initially
 showImage(currentIndex);
+
+// Wait for the document to fully load
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all elements with the class 'my-col'
+  const elements = document.querySelectorAll('.my-col');
+
+  // Add the 'appear' class to each element with a slight delay
+  elements.forEach((element, index) => {
+    setTimeout(function() {
+      element.classList.add('appear');
+    }, index * 300); // Adjust the delay (in milliseconds) between elements as needed
+  });
+});
