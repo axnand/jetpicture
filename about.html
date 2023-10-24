@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500&family=Roboto:wght@100&family=Rubik:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +13,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500&family=Martel+Sans:wght@600&family=Roboto:wght@100&family=Rubik:wght@600&display=swap" rel="stylesheet">
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 <link rel="stylesheet" href="JetPictures.css">
-<link rel="stylesheet" href="form.css">
- <!-- Bootstrap CSS -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-  </head>
+<link rel="stylesheet" href="form.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500&family=Kanit:wght@600&family=Martel+Sans:wght@600&family=Roboto:wght@100&family=Rubik:wght@600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
 <style>
   .about{
     font-family: 'Bebas Neue', sans-serif;
@@ -32,36 +41,31 @@ word-spacing: 4px;
 
 
   }
+
+  @media only screen and (max-width: 1008px) {
+            .creator {
+                display: none;
+            }
+        }
 </style>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="pictures/jetlogo.png" class="logo" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-        </div>
+    <nav id="Navbar" class="navbar navbar-expand-lg navbar-light bg-light justify-content-between py-0 my-0 px-4" style="background-color: white !important;">
+      <a class="navbar-brand" href="index.html"> <img src="pictures/jetlogo.png" class="logo" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link " href="gallery.html">Gallery</a></li>
+        </ul>
       </div>
     </nav>
-
     <br/>
       <div id="flotingQuery" style="margin-right: -331px;">
-        <div class="flotingQuery-btn"><img src="https://www.thevisualhouse.in/images/query-close.png" alt="Close"></div>
-        <form action="https://formsubmit.co/anandmohanjha241@gmail.com" method="post" id="contactform" name="contactform">
+        <div class="flotingQuery-btn"><img src=pictures/enquiry.png alt="Close"></div>        <form action="https://formsubmit.co/anandmohanjha241@gmail.com" method="post" id="contactform" name="contactform">
           <div class="centered" style="display: none;">
               <p id="error_text"></p>
           </div>
@@ -100,9 +104,9 @@ word-spacing: 4px;
     <hr>
     <div class="team">
       <h4>Our Team</h4>
-  </div>
+    </div>
+    <div class="creator">
  <div class="container">
-  
    <div class="row mb-2">
     <div class="col-md-6" id="dir2">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative arun2">
@@ -162,6 +166,7 @@ word-spacing: 4px;
   
    </div>
    </div>
+   </div>
  
  <footer class="footer-distributed" style="margin-top: 20px;">
 
@@ -217,6 +222,7 @@ word-spacing: 4px;
 </footer>
 
   <script src="js/script.js">  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
 </body>
 </html>

@@ -1,0 +1,15 @@
+.carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 100%;
+            margin: auto;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #myCarousel {
+                width: 200px;
+            }
+        }
+        #myCarousel{
+          width: 550px;
+          margin: 0 auto 20px auto;
+        }
