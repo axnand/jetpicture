@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slider</title>
+  <style>
+    #slider-container {
+      width: 800px; /* Increased the width of the container */
+      margin: 0 auto; /* Center the container horizontally */
+      position: relative;
+    }
+
+    #slider {
+      width: 600px; /* Increased the width of the slider */
+      height: 300px; /* Increased the height of the slider */
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto; /* Center the slider horizontally */
+    }
+
+    #slider img {
+      width: 600px; /* Increased the width of the images */
+      height: 300px; /* Increased the height of the images */
+      position: absolute;
+      transform: translateX(0%); /* Set the initial transform to make images visible */
+      opacity: 0;
+      transition: transform 0.9s, opacity 0.9s; /* Add a transition for 'transform' and 'opacity' properties */
+    }
+
+    #prev, #next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #prev {
+      left: 70px;
+    }
+
+    #next {
+      right: 70px;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <script src="slide.js">
+
+  </script>
+</body>
+</html>

@@ -98,7 +98,7 @@ nav ul li a:hover {
 .line{
     color: #F5003A;
     font-size: 50px;
-    transition: 0.1s;
+    transition: 0.2s;
     transform: translateY(20px); /* Initial position: shifted down 20px */
   opacity: 0;
 }
@@ -132,18 +132,12 @@ nav ul li a:hover {
 .hero.loaded .main  {
   transform: translateX(0); /* Final position */
   opacity: 1; /* Fade in */
+  transform: translateX(0);
+    opacity: 1;
+
 }
 
-.sub.tvc {
-  transition-delay: 0.2s; /* Delay for TVC element */
-}
-.sub.digital {
-  transition-delay: 0.4s; /* Delay for DIGITAL element */
-}
 
-.sub.content {
-  transition-delay: 0.6s; /* Delay for CONTENT element */
-}
 
 .content a{
     text-decoration: none;
@@ -157,6 +151,7 @@ nav ul li a:hover {
      background-color: black;
      font-family: 'Gabarito', sans-serif;
      font-weight: 700px;
+
 }
 .content a:hover{
     background-color: white;
@@ -168,6 +163,20 @@ nav ul li a:hover {
     
 
 }
+
+.col{
+  transition: box-shadow 0.3s ease; /* Add a smooth transition to box-shadow */
+}
+
+.col:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.col-md-6{
+  transition: box-shadow 0.3s ease;
+}
+.col-md-6:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+
 .back-video{
     position: absolute;
     top: 0;
@@ -185,8 +194,17 @@ nav ul li a:hover {
 }
 @media(max-aspect-ratio:16/9){
 .back-video{
-    display: none;
+    
 }
+.hero.loaded .main{
+  position: relative;
+  bottom: 80px;
+}
+.content a{
+  position: relative;
+  top: 110px;
+}
+
 }
 .directors{
 

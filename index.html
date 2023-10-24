@@ -18,7 +18,79 @@
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+  .mobcreator{
+    display: none;
+  }
+  #slider-container {
+      width: 400px; /* Increased the width of the container */
+      margin: 0 auto; /* Center the container horizontally */
+      position: relative;
+    }
 
+    #slider {
+      width: 200px; /* Increased the width of the slider */
+      height: 130px; /* Increased the height of the slider */
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto; /* Center the slider horizontally */
+    }
+
+    #slider img {
+      width: 200px; /* Increased the width of the images */
+      height: 130px; /* Increased the height of the images */
+      position: absolute;
+      transform: translateX(0%); /* Set the initial transform to make images visible */
+      opacity: 0;
+      transition: transform 0.9s, opacity 0.9s; /* Add a transition for 'transform' and 'opacity' properties */
+    }
+
+    #prev, #next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #prev {
+      left: 70px;
+    }
+
+    #next {
+      right: 70px;
+    }
+    @media only screen and (max-width: 1008px) {
+            .creator {
+                display: none;
+            }
+            .back-video{
+              
+            }
+            .mobcreator{
+              display: block;
+            }
+            @media only screen and (max-width: 1008px) {
+            .hero {
+              height: 50vh ;
+            }}
+            .main{
+              font-size: 30px;
+            }
+            .line{
+              font-size: 30px;
+            }
+            .sub{
+              font-size: 20px;
+            }
+            .explore{
+              font-size: 10px;
+              padding: 7px 15px;
+            }
+        }
+</style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -81,7 +153,7 @@
     <div class="content">
       <p class="main">Welcome to  <span class="line">Jet</span>Pictures</p>
       <p class="sub">TVC <span class="line">|</span> DIGITAL <span class="line">|</span> CONTENT</p>
-      <a href="https://vimeo.com/showcase/8841811">Explore Our Projects</a>
+      <a href="https://vimeo.com/showcase/8841811" class="explore">Explore Our Projects</a>
    
     </div>
    </div>
@@ -94,7 +166,7 @@
     <div class="arun">
         
     <div class="col-md-6 arun2">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative yoyo">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-primary-emphasis">Director</strong>
             <h3 class="mb-0">Arun Jananthana</h3>
@@ -256,6 +328,7 @@
   
     </div>
    </div>
+   <div class="creator">
    <div class="container">
    <div class="row mb-2">
     <div class="col-md-6" id="dir2">
@@ -298,6 +371,20 @@
       </div>
   </div>
    </div>
+   
+  </div>
+  <div class="mobcreator"> 
+    <div id="slider-container">
+      <div id="slider">
+        <img src="pictures/arun_gallery.png" alt="Image 1">
+        <img src="pictures/sunil_gallery.png" alt="Image 2">
+        <img src="pictures/ram_gallery.png" alt="Image 3">
+        <img src="pictures/krithiga_gallery.png" alt="Image 4">
+      </div>
+      <div id="prev">&#8249;</div>
+      <div id="next">&#8250;</div>
+    </div>
+  </div>
    <div class="vimeo">
     <p class="text-center">Our Offices</p>
     </div>
@@ -374,7 +461,7 @@
 
 </footer>
 
-  <script src="js/script.js">
-  </script>
+  <script src="js/script.js"> </script>
+  <script src="js/slide.js"></script>
   </body>
 </html>
