@@ -26,6 +26,7 @@
 <style>
   .video{
   height: 200px;
+  
 }
 .thumbnail{
   height: 200px;
@@ -60,7 +61,7 @@
     <br/>
       <div id="flotingQuery" style="margin-right: -331px;">
         <div class="flotingQuery-btn"><img src="pictures/enquiry.png" alt="Close"></div>
-        <form action="https://formsubmit.co/anandmohanjha241@gmail.com" method="post" id="contactform" name="contactform">
+        <form action="https://formsubmit.co/producer@jetpictures.in" method="post" id="contactform" name="contactform">
           <div class="centered" style="display: none;">
               <p id="error_text"></p>
           </div>
@@ -231,9 +232,19 @@
         <br>
         <div class="container">
           <br>
-          <div class="team">
-            <h4 style="   font-size: 20px; ">Site Images</h4>
+          <div class="team" style=" text-align: center; margin-bottom: 60px;">
+            <h4 style="   font-size: 20px; display: inline-block;">Behind the Scenes</h4>
+            <img src="pictures/camera.gif" style="width: 40px; margin: 0 auto 0 10px; margin-bottom: 15px;">
         </div>
+        <div class="row row-cols-1 row-cols-sm-2  g-2">
+          <!-- ... (your existing code) ... -->
+    
+    
+    <!-- ... (repeat for other video elements) ... -->
+    
+    <!-- JavaScript to control video playback on hover -->
+    
+
           <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" style="margin-bottom: 70px;"> <!-- Set interval to 3000 milliseconds (3 seconds) -->
               <!-- Indicators -->
 
@@ -295,6 +306,57 @@
               </a>
           </div>
       </div>
+      <div id="myCarousel" class="carousel slide myCarousel2" data-ride="carousel" data-interval="false" style="margin-bottom: 70px;">
+        <!-- Indicators -->
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <video width="550px" height="300" controls>
+                <source src="videos/vid1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    
+        <div class="item">
+            <video width="550px" height="300" controls >
+                <source src="videos/vid2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="item">
+          <video width="550px" height="300" controls >
+              <source src="videos/V1.mp4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+      <div class="item">
+        <video width="550px" height="300" controls >
+            <source src="videos/V2.mp4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+      
+
+
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href=".myCarousel2" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href=".myCarousel2" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+</div>
+
 
       <footer class="footer-distributed">
 
@@ -350,5 +412,19 @@
 
     </footer>
     <script src="js/script.js">  </script>
+    <script>
+      const videos = document.querySelectorAll('video');
+
+videos.forEach((video, index) => {
+    video.addEventListener('play', () => {
+        // Pause all other videos when one starts playing
+        videos.forEach((otherVideo, otherIndex) => {
+            if (otherIndex !== index) {
+                otherVideo.pause();
+            }
+        });
+    });
+});
+  </script>
     </body>
     </html>
