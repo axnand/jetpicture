@@ -124,6 +124,8 @@ nav ul li a:hover {
     transform: translateY(20px); /* Initial position: shifted down 20px */
   opacity: 0;
 }
+.col{
+  transition: box-shadow 0.3s ease;}
 
 .hero.loaded .sub  {
   transform: translateY(0); /* Final position */
@@ -163,9 +165,6 @@ nav ul li a:hover {
 
 }
 
-.col{
-  transition: box-shadow 0.3s ease; /* Add a smooth transition to box-shadow */
-}
 
 .col:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

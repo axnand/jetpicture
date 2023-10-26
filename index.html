@@ -19,8 +19,17 @@
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <style>
+.video{
+  height: 300px;
+}
+.thumbnail{
+  height: 300px;
+}
   .col-md-6{
   transition: box-shadow 0.3s ease;
+}
+.video{
+  object-fit: cover;
 }
 .col-md-6:hover {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
@@ -68,6 +77,10 @@
     #next {
       right: 70px;
     }
+ /* Add a smooth transition to box-shadow */
+ 
+
+
     @media only screen and (max-width: 1008px) {
             .creator {
                 display: none;
@@ -102,7 +115,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="Navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="pictures/jetlogo.png" class="logo" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -126,7 +139,7 @@
     <br/>
     <div id="flotingQuery" style="margin-right: -331px;">
       <div class="flotingQuery-btn"><img src="pictures/enquiry.png" alt="Close"></div>
-      <form action="https://formsubmit.co/anandmohanjha241@gmail.com" method="post" id="contactform" name="contactform">
+      <form action="https://formsubmit.co/@gmail.com" method="post" id="contactform" name="contactform">
         <div class="centered" style="display: none;">
             <p id="error_text"></p>
         </div>
@@ -153,7 +166,7 @@
     </div>
    <div>
    <div class="hero">
-    <video autoplay loop muted controls plays-inline class="back-video">
+    <video autoplay loop muted controls  plays-inline class="back-video">
       <source src="videos/ADDD.mp4" type="video/mp4">
     </video>
     <div class="content">
@@ -164,11 +177,10 @@
     </div>
    </div>
    </div>
+   
    <div class="directors">
     <div class="blank"></div>
-    <div class="team">
-        <h4>Our Team</h4>
-    </div>
+
     <div class="arun">
         
     <div class="col-md-6 arun2 mycol">
@@ -195,7 +207,7 @@
       <div class="album py-5 bg-body-tertiary">
     <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="row row-cols-1 row-cols-sm-2 g-2">
         <!-- ... (your existing code) ... -->
 
   
@@ -207,43 +219,35 @@
   <div class="col">
     <div class="card shadow-sm">
       
-        <video muted controls plays-inline class="video">
-          <source src="videos/payment.mp4" type="video/mp4">
-        </video>
-        <img src="pictures/karur.png" class="thumbnail" alt="Video Thumbnail">
+        <video muted controls  plays-inline class="video">
+          <source src="videos/eblu.mp4" type="video/mp4">
+      </video>
+      <img src="pictures/scooty2.png" class="thumbnail w-full" alt="Video Thumbnail">
     </div>
   </div>
   <div class="col">
     <div class="card shadow-sm">
       
-        <video muted controls plays-inline class="video">
-          <source src="videos/ADDD.mp4" type="video/mp4">
+        <video muted controls  plays-inline class="video">
+          <source src="videos/godrej.mp4" type="video/mp4">
         </video>
-        <img src="pictures/scooty2.png" class="thumbnail" alt="Video Thumbnail">
+        <img src="pictures/godrej.png" class="thumbnail" alt="Video Thumbnail">
     </div>
   </div>
   <div class="col">
     <div class="card shadow-sm">
       
-        <video muted controls plays-inline class="video">
-          <source src="videos/Domex.mp4" type="video/mp4">
+        <video muted controls  plays-inline class="video">
+          <source src="videos/garden.mp4" type="video/mp4">
         </video>
-        <img src="pictures/domex.png" class="thumbnail" alt="Video Thumbnail">
+        <img src="pictures/garden.png" class="thumbnail" alt="Video Thumbnail">
     </div>
   </div>
+
   <div class="col">
     <div class="card shadow-sm">
       
-        <video muted controls plays-inline class="video">
-          <source src="videos/Domex.mp4" type="video/mp4">
-        </video>
-        <img src="pictures/domex.png" class="thumbnail" alt="Video Thumbnail">
-    </div>
-  </div>
-  <div class="col">
-    <div class="card shadow-sm">
-      
-        <video muted controls plays-inline class="video">
+        <video muted controls  plays-inline class="video">
           <source src="videos/FairEver.mp4" type="video/mp4">
         </video>
         <img src="pictures/fair.png" class="thumbnail" alt="Video Thumbnail">
@@ -252,19 +256,28 @@
   <div class="col">
     <div class="card shadow-sm">
       
-        <video muted controls plays-inline class="video">
-          <source src="videos/Godrej.mp4" type="video/mp4">
+        <video muted controls  plays-inline class="video">
+          <source src="videos/VLCC.mp4" type="video/mp4">
         </video>
-        <img src="pictures/godrej.png" class="thumbnail" alt="Video Thumbnail">
+        <img src="pictures/vlcc_skin.png" class="thumbnail" alt="Video Thumbnail">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      
+        <video muted controls  plays-inline class="video">
+          <source src="videos/chikki.mp4" type="video/mp4">
+        </video>
+        <img src="pictures/chikki.png" class="thumbnail" alt="Video Thumbnail">
     </div>
   </div>
   <div class="col" style="margin: 20px auto 0 auto">
     <div class="card shadow-sm">
       
-        <video muted controls plays-inline class="video">
-          <source src="videos/VLCC.mp4" type="video/mp4">
+        <video muted controls  plays-inline class="video">
+          <source src="videos/Domex.mp4" type="video/mp4">
         </video>
-        <img src="pictures/vlcc_skin.png" class="thumbnail" alt="Video Thumbnail">
+        <img src="pictures/domex.png" class="thumbnail" alt="Video Thumbnail">
     </div>
   </div>
 
@@ -306,7 +319,7 @@
 <div class="album py-5 bg-body-tertiary">
   <div class="container">
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="row row-cols-1 row-cols-sm-2  g-2">
       <!-- ... (your existing code) ... -->
 
 
@@ -318,64 +331,68 @@
 <div class="col">
   <div class="card shadow-sm">
     
-      <video muted controls plays-inline class="video">
-        <source src="videos/payment.mp4" type="video/mp4">
+      <video muted controls  plays-inline class="video">
+        <source src="videos/loreal.mp4" type="video/mp4">
       </video>
-      <img src="pictures/karur.png" class="thumbnail" alt="Video Thumbnail">
+      <img src="pictures/loreal.png" class="thumbnail" alt="Video Thumbnail">
+        
   </div>
 </div>
 <div class="col">
   <div class="card shadow-sm">
     
-      <video muted controls plays-inline class="video">
-        <source src="videos/ADDD.mp4" type="video/mp4">
+      <video muted controls  plays-inline class="video">
+        <source src="videos/Haier Dipa 1.mp4" type="video/mp4">
       </video>
-      <img src="pictures/scooty2.png" class="thumbnail" alt="Video Thumbnail">
+      <img src="pictures/gap.png" class="thumbnail" alt="Video Thumbnail">
   </div>
 </div>
 <div class="col">
   <div class="card shadow-sm">
     
-      <video muted controls plays-inline class="video">
-        <source src="videos/Domex.mp4" type="video/mp4">
+      <video muted controls  plays-inline class="video">
+        <source src="videos/Glass Ka Better Half _ Ozone.mp4" type="video/mp4">
+    </video>
+    <img src="pictures/ozone.png" class="thumbnail w-full" alt="Video Thumbnail">
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm">
+    
+      <video muted controls  plays-inline class="video">
+        <source src="videos/Child Labour.mp4" type="video/mp4">
       </video>
-      <img src="pictures/domex.png" class="thumbnail" alt="Video Thumbnail">
+      <img src="pictures/child.png" class="thumbnail" alt="Video Thumbnail">
   </div>
 </div>
 <div class="col">
   <div class="card shadow-sm">
     
-      <video muted controls plays-inline class="video">
-        <source src="videos/Domex.mp4" type="video/mp4">
+      <video muted controls  plays-inline class="video">
+        <source src="videos/Red Hunt CAR.mp4" type="video/mp4">
       </video>
-      <img src="pictures/domex.png" class="thumbnail" alt="Video Thumbnail">
+      <img src="pictures/car.png" class="thumbnail" alt="Video Thumbnail">
+        
   </div>
 </div>
 <div class="col">
   <div class="card shadow-sm">
     
-      <video muted controls plays-inline class="video">
-        <source src="videos/FairEver.mp4" type="video/mp4">
+      <video muted controls  plays-inline class="video" >
+        <source src="videos/Karbon Titanium Kiss.mp4" type="video/mp4">
       </video>
-      <img src="pictures/fair.png" class="thumbnail" alt="Video Thumbnail">
-  </div>
-</div>
-<div class="col">
-  <div class="card shadow-sm">
-    
-      <video muted controls plays-inline class="video">
-        <source src="videos/Godrej.mp4" type="video/mp4">
-      </video>
-      <img src="pictures/godrej.png" class="thumbnail" alt="Video Thumbnail">
+      <img src="pictures/kiss.png" class="thumbnail" alt="Video Thumbnail">
+        
   </div>
 </div>
 <div class="col" style="margin: 20px auto 0 auto">
   <div class="card shadow-sm">
     
-      <video muted controls plays-inline class="video">
-        <source src="videos/VLCC.mp4" type="video/mp4">
+      <video muted controls  plays-inline class="video">
+        <source src="videos/SpinzCheckD cut hires.mp4" type="video/mp4">
       </video>
-      <img src="pictures/vlcc_skin.png" class="thumbnail" alt="Video Thumbnail">
+      <img src="pictures/spintz.png" class="thumbnail" alt="Video Thumbnail">
   </div>
 </div>
 
@@ -384,7 +401,7 @@
 </div>
 
 </div>
-<a href="https://vimeo.com/arunjanarthanan" target="_blank" class="vimeo-image" style="text-decoration: none;"><div class="vimeo2">
+<a href="https://vimeo.com/sunilcherian" target="_blank" class="vimeo-image" style="text-decoration: none;"><div class="vimeo2">
   <img src="pictures/vimeo-button3.gif"  width="180" ></div></a>
 
 
