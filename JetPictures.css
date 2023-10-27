@@ -348,7 +348,7 @@ font-family: 'Rubik', sans-serif;
 
 
 .footer-distributed{
-	background: #666;
+	background: #9e9e9e;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -379,7 +379,7 @@ font-family: 'Rubik', sans-serif;
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color:  #ffffff;
+	color:  #161414;
 	margin: 20px 0 12px;
 	padding: 0;
 }
@@ -406,8 +406,8 @@ font-family: 'Rubik', sans-serif;
 }
 
 .footer-distributed .footer-center i{
-	background-color:  #b1bfc7;
-	color: #ffffff;
+	background-color:  rgb(102,102,102);
+	color:#161414;
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -425,7 +425,7 @@ font-family: 'Rubik', sans-serif;
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #ffffff;
+	color: #161414;
   font-weight:400;
 	vertical-align: middle;
 	margin:0;
@@ -448,7 +448,7 @@ font-family: 'Rubik', sans-serif;
   font-weight:300;
   font-size: 20px;
   left: 0;
-  color: #ffffff;
+  color:#161414;
   display: inline-block;
 
 }
@@ -465,7 +465,7 @@ font-family: 'Rubik', sans-serif;
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  #b9c6d1;
+	color:  #182936;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
